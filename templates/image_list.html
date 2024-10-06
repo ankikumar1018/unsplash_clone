@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="image-grid">
+        {% for image in images %}
+            <div class="image-item">
+                <img loading="lazy" src="{{ image.image.url }}" alt="{{ image.title }}">
+                {% comment %} <h3>{{ image.title }}</h3> {% endcomment %}
+                <a href="{% url 'download_image' image.id %}" class="download-btn">Download</a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

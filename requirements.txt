@@ -1,0 +1,26 @@
+# Django Unsplash Clone Requirements
+
+# Django
+Django==5.1.1
+
+# Django REST framework
+djangorestframework==3.14.0
+
+# Pillow for image processing
+Pillow==10.1.0
+
+# For handling environment variables (optional, but recommended)
+python-dotenv==1.0.0
+
+# WSGI server for deployment (optional, but recommended)
+gunicorn==21.2.0
+
+# Database adapter (if using PostgreSQL, uncomment the next line)
+# psycopg2==2.9.9
+
+# For linting and code formatting
+flake8==6.1.0
+black==23.11.0
+
+# For API documentation (optional)
+drf-yasg==1.21.7
